@@ -23,7 +23,7 @@ configurations {
     }
 }
 
-task cucumber() {
+task runCucumberTests() {
     dependsOn assemble, compileTestJava
     doLast {
         javaexec {
